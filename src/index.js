@@ -1,5 +1,12 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import WebFont from 'webfontloader';
 import App from './App';
 
-ReactDOM.render(<App />, document.getElementById("index"));
+
+WebFont.load({
+  google: {
+    families: ['Open Sans:300,400,700', 'sans-serif'],
+  },
+});
+ReactDOM.render(<App />, document.getElementById('index'));
