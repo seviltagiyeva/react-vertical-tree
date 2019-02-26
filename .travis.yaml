@@ -4,8 +4,14 @@ node_js:
 cache:
   directories:
     - node_modules
+env:
+  matrix:
+  - REACT=16.4
+  - REACT=16.5
+  - REACT=16.6
+  - REACT=16.8
+sudo: false
 script:
   - npm test
-  - npm run build
 on:
   branch: master
