@@ -1,7 +1,7 @@
 import React from 'react';
-import Tree from './tree/Tree';
-import withStyles from './utils';
-import { departments } from './treeMockData';
+import Tree from './components/tree/Tree';
+import { withStyles } from './utils';
+import { data1 } from './components/treeMockData';
 
 const styles = {
   node: {
@@ -22,11 +22,11 @@ const styles = {
 };
 
 const App = () => {
-  const TreeWithStyle = withStyles(styles)(Tree);
+  const TreeWithStyle = (Tree);
   return (
     <TreeWithStyle
-      data={departments}
-      render={item => <div id={item.id}>{`${item.id}.${item.name}`}</div>}
+      data={data1}
+      // render={item => <div id={item.id}>{`${item.id}.${item.name}`}</div>}
       onClick={item => console.log(item)}
       direction
     />

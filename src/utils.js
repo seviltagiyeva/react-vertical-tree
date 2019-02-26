@@ -1,14 +1,10 @@
 import React from 'react';
 
 
-const  withStyles = styles => Component => class extends React.Component{
-  constructor(props) {
-    super(props);
-  }
-
+export const withStyles = styles => Component => class extends React.PureComponent {
   render() {
-    return <Component { ...this.props } classes={styles}/> 
+    return <Component {...this.props} classes={styles} />;
   }
-}
+};
 
-export default withStyles;
+export const calcWidth = width => `${parseInt(width || 2, 0) / 2}px`;

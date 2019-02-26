@@ -1,8 +1,12 @@
 {
   "extends": "airbnb" ,
+  "env": {
+    "jest": true
+  },
   "rules": {
     "no-underscore-dangle": 0,
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}]
   },
   "globals": {
     "window": true,

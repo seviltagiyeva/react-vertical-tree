@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { calcWidth } from '../utils';
 
 export const Wrapper = styled.div`
   display: inline-block;
@@ -35,19 +36,19 @@ export const Node = styled.li`
     content: '';
     position: absolute;
     top: 0;
-    right:  calc( 50% - ${props => `${parseInt(props.styles.width || 2) / 2}px`} );
+    right:  calc( 50% - ${props => calcWidth(props.styles.width)});
     border-top: ${props => props.styles.width || '2px'} solid ${props => props.styles.color || '#d6e2ea'} ;
     width: 50%;
     height: ${props => (props.styles ? props.styles.height : '40px')};
     z-index: -1;
   }
   ::after{
-    left: calc( 50% - ${props => `${parseInt(props.styles.width || 2) / 2}px`});
+    left: calc( 50% - ${props => calcWidth(props.styles.width)});
     border-left: ${props => props.styles.width || '2px'} solid ${props => props.styles.color || '#d6e2ea'};
     content: '';
     position: absolute;
     top: 0;
-    //right: calc( 50% - ${props => `${parseInt(props.styles.width || 2) / 2}px`});
+    //right: calc( 50% - ${props => calcWidth(props.styles.width)});
     border-top: ${props => props.styles.width || '2px'} solid ${props => props.styles.color || '#d6e2ea'};
     width: 50%;
     height: ${props => (props.styles ? props.styles.height : '40px')};
@@ -90,4 +91,26 @@ export const Text = styled.span`
   color: '#fff';
   font-size: 15px;
   ${props => (props.styles ? { ...props.styles } : '')};
+`;
+
+
+export const Root = styled.ul`
+  &:not(:first-child){
+    display: flex;
+    position: relative ;
+    padding:${props => props.styles.height} 0 0 0;
+    margin: 0;
+  }
+  &:empty::before {
+    border-left : none !important;
+  }
+  &:not(:first-child)::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: calc( 50% - ${props => calcWidth(props.styles.width)});
+    border-left: ${props => props.styles.width || '2px'} solid ${props => props.styles.color || '#d6e2ea'};
+    width: 0;
+    height: ${props => props.styles.height || '40px'};
+  }
 `;

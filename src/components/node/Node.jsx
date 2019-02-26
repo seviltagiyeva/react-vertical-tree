@@ -3,15 +3,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {
   Wrapper, Text, Node, Arrow, Round,
-} from './styles';
+} from '../styles';
 
 const NodeContainer = (props) => {
   const {
-    item, classes, render, onClick, direction, children,
+    item, classes, render, onClick, direction, children, round,
   } = props;
   return (
     <Node id={item.id} styles={classes.lines}>
-      { item.parent && <Round color={classes.lines.color} /> }
+      { round && <Round color={classes.lines.color} /> }
       { direction && item.parent && <Arrow color={classes.lines.color} /> }
       {
       typeof render === 'function'
@@ -42,6 +42,7 @@ NodeContainer.propTypes = {
   onClick: PropTypes.func,
   direction: PropTypes.bool,
   children: PropTypes.node,
+  round: PropTypes.bool,
 };
 
 NodeContainer.defaultProps = {
@@ -58,6 +59,7 @@ NodeContainer.defaultProps = {
   onClick: null,
   direction: false,
   children: null,
+  round: false,
 };
 
 export default NodeContainer;
