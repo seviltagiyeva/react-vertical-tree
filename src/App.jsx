@@ -1,9 +1,9 @@
 import React from 'react';
-import Tree from './lib/components/tree/Tree';
+import Tree from './lib';
 import { data1 } from './lib/treeMockData';
 
+// can be used like this: withStyles(styles)(Tree)
 const App = () => (
-  // can be used like this: withStyles(styles)(Tree)
   <Tree
     data={data1}
     render={item => <div id={item.id}>{`${item.id}.${item.name}`}</div>}
