@@ -1,2 +1,2 @@
 node_modules
-src/components/treeMockData.js
+src/lib/treeMockData.js
