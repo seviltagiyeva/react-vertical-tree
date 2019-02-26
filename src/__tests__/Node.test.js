@@ -2,8 +2,8 @@ import React from 'react';
 import { shallow } from '../enzyme';
 import {
   Round, Arrow, Wrapper, Text,
-} from '../components/styles';
-import NodeContainer from '../components/node/Node';
+} from '../lib/components/styles';
+import NodeContainer from '../lib/components/node/Node';
 import { data1, data2 } from '../treeMockData';
 
 describe('Node tests', () => {

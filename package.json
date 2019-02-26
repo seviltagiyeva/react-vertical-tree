@@ -7,7 +7,7 @@
   "scripts": {
     "test": "jest",
     "start": "webpack-dev-server --mode development --open",
-    "build": "webpack-dev-server --mode production",
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
     "precommit": "NODE_ENV=production lint-staged",
     "lint": "eslint src/**/*.js --fix"
   },

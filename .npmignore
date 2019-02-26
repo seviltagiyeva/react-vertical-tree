@@ -1,0 +1,11 @@
+.npmignore
+.babelrc
+.travis.yml
+package-lock.json
+__tests__
+enzyme.js
+index.html
+index.js
+treeMockData.js
+.eslintignore.js
+.gitignore
