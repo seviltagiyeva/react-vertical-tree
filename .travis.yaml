@@ -11,6 +11,8 @@ env:
   - REACT=16.6
   - REACT=16.8
 sudo: false
+install:
+  - npm install
 script:
   - npm test
 on:
