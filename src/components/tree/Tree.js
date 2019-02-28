@@ -2,7 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import NodeContainer from '../node/Node';
-import { Root } from '../styles';
+import { Root } from '../../styles';
 
 
 class Tree extends React.Component {

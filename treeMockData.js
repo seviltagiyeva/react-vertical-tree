@@ -29,3 +29,15 @@ export const data3 = [
      { id: 2 , name: 'company2' , parent: {id: 1} ,  departmenttype: { id: 1 }, children: []},
   ]} 
 ];
+
+
+export const data4 =  [
+  {id: 1, name: 'company', parent: null, children: [
+    {id: 2, parent: {id: 1}, name: 'subcompany1', children: []},
+    {id: 3, parent: {id: 1}, name: 'subcompany2', children: [
+      {id: 4, parent: {id: 3}, name: 'example-company', children: []}
+    ]},
+    {id: 5, parent: {id: 1}, name: 'company2', children: []},
+    {id: 6, parent: {id: 1}, name: 'company3', children: []}
+  ]}
+]

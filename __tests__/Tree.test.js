@@ -1,8 +1,8 @@
 import React from 'react';
 import { shallow } from '../enzyme';
-import { Root } from '../lib/components/styles';
-import Tree from '../lib/components/tree/Tree';
-import NodeContainer from '../lib/components/node/Node';
+import { Root } from '../src/styles';
+import Tree from '../src/components/tree/Tree';
+import NodeContainer from '../src/components/node/Node';
 import { data1, data2, data3 } from '../treeMockData';
 
 describe('Tree tests', () => {

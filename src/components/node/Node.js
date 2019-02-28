@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {
   Wrapper, Text, Node, Arrow, Round,
-} from '../styles';
+} from '../../styles';
 
 const NodeContainer = (props) => {
   const {

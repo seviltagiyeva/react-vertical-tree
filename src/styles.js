@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { calcWidth } from '../utils';
+import { calcWidth } from './utils';
 
 export const Wrapper = styled.div`
   display: inline-block;
