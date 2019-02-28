@@ -9,3 +9,4 @@ enzyme.js
 .travis.yml
 .eslintrc
 .eslintignore
+examples

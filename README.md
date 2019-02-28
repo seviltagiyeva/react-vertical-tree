@@ -38,7 +38,7 @@ return <Tree data={data} />
 
 ```
 
-![default preview](https://ibb.co/n37SphP)
+![default preview](examples/deafult.png)
 
 Add direction property for line arrows:
 
@@ -53,7 +53,7 @@ return <Tree
 
 ```
 
-![default preview](https://ibb.co/WfgdnKt)
+![default preview with direction](examples/direction.png)
 
 Also you can use `withStyles` function and change the default style. Available class names are `node, lines, text` .
 
@@ -83,7 +83,7 @@ return <StyledTree data={data} direction/>
 
 ```
 
-![default preview](https://ibb.co/CMGFhX9)
+![customized style](/examples/customStyle.png)
 
 Also you can fully customize node component with `render` method:
 
@@ -102,7 +102,7 @@ return <Tree
 
 ```
 
-![default preview](https://ibb.co/DGN1wX7)
+![customized nodes](examples/customNode.png)
 
 
 Handle node actions with `onClick` method:
