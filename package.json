@@ -1,6 +1,6 @@
 {
   "name": "react-vertical-tree",
-  "version": "1.1.2",
+  "version": "1.1.4",
   "description": "Simple & lightweight vertical tree like view.",
   "main": "dist/index.js",
   "module": "src/index.js",
@@ -8,7 +8,7 @@
     "type": "git",
     "url": "https://github.com/seviltagiyeva/react-tree"
   },
-  "homepage": "https://github.com/seviltagiyeva/react-tre",
+  "homepage": "https://github.com/seviltagiyeva/react-tree",
   "keywords": [
     "react-graph",
     "react-tree",

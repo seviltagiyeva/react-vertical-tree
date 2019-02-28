@@ -1,6 +1,7 @@
 # React Vertical Graph Tree
 
-[![Build Status](https://travis-ci.com/seviltagiyeva/react-tree.svg?branch=master)](https://travis-ci.com/seviltagiyeva/react-tree)
+[![Build Status](https://travis-ci.com/seviltagiyeva/react-vertical-tree.svg?branch=master)](https://travis-ci.com/seviltagiyeva/react-tree)
+![Download Count](https://img.shields.io/npm/dw/react-vertical-tree.svg)
 
 
 Simple and lightweight tree component for react apps.
