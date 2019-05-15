@@ -116,7 +116,7 @@ import Tree, { withStyles } from 'react-vertical-tree'
 return <Tree 
         data={data} 
         direction
-        onClikc={ item => console.log(item.id)}
+        onClick={ item => console.log(item.id)}
       />
 
 ...
