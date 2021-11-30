@@ -17,7 +17,7 @@ class Tree extends React.Component {
       return (
         <Root styles={lines}>
           {tree.map((branch) => {
-            const nextWithSingleChild = branch.children.length > 1;
+            const nextWithSingleChild = branch?.children?.length > 1;
             return (
               <NodeContainer
                 item={branch}
@@ -28,7 +28,7 @@ class Tree extends React.Component {
                 direction={direction}
                 round={multiChild}
               >
-                {branch.children.length > 0 && renderTree(branch.children, nextWithSingleChild)}
+                {branch?.children?.length > 0 && renderTree(branch?.children, nextWithSingleChild)}
               </NodeContainer>
             );
           })}
